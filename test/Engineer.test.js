@@ -3,9 +3,9 @@ const Employee = require("../lib/Employee");
 const Engineer = require("../lib/Engineer");
 
     test("set github using const", () => {
-        const gitHub = "kjun290";
-        const e = new Engineer ("Kevin", 123, "kevin@email.com", gitHub);
-        expect(e.github).toBe(gitHub);
+        const testgitHub = "kjun290";
+        const e = new Engineer ("Kevin", 123, "kevin@email.com", testgitHub);
+        expect(e.github).toBe(testgitHub);
 
     });
 
@@ -16,8 +16,8 @@ const Engineer = require("../lib/Engineer");
     })
 
     test("getGithub() should return gitHub", () => {
-        const gitHub = "kjun290";
-        const e = new Engineer("Kevin", 123, "kevin@email.com", gitHub);
-        expect(e.getGithub()).toBe(gitHub);
+        const testgitHub = "kjun290";
+        const e = new Engineer("Kevin", 123, "kevin@email.com", testgitHub);
+        expect(e.getGithub()).toBe(testgitHub);
     })
         

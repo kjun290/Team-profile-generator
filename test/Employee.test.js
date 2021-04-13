@@ -9,41 +9,41 @@ const Employee = require ("../lib/Employee");
         })
 
     test ("set name using const",() => {
-        const name = "Kevin";
-        const e = new Employee(name);
-        expect(e.name).toBe(name);
+        const testname = "Kevin";
+        const e = new Employee(testname);
+        expect(e.name).toBe(testname);
     })
 
     test ("set ID using const",() => {
-        const id = 123;
-        const e = new Employee("kevin", id);
-        expect(e.id).toBe(id);
+        const testid = 123;
+        const e = new Employee("kevin", testid);
+        expect(e.id).toBe(testid);
     })
 
 
     test ("set email using const",() => {
-        const email = "kevin@email.com";
-        const e = new Employee("Kevin", 123, email);
-        expect(e.email).toBe(email);
+        const testemail = "kevin@email.com";
+        const e = new Employee("Kevin", 123, testemail);
+        expect(e.email).toBe(testemail);
     })
 
 
     test ("get name using getName()", () => {
-        const name = "Kevin";
-        const e = new Employee(name);
-        expect(e.getName()).toBe(name);
+        const testname = "Kevin";
+        const e = new Employee(testname);
+        expect(e.getName()).toBe(testname);
     })
 
     test ("get ID using getId()", () => {
-        const id = 123;
-        const e = new Employee("Kevin", id);
-        expect(e.getId()).toBe(id);
+        const testid = 123;
+        const e = new Employee("Kevin", testid);
+        expect(e.getId()).toBe(testid);
     })
 
     test ("get Email using getEmail()", () => {
-        const email = "kevin@email.com";
-        const e = new Employee("Kevin", 123, email);
-        expect(e.getEmail()).toBe(email);
+        const testemail = "kevin@email.com";
+        const e = new Employee("Kevin", 123, testemail);
+        expect(e.getEmail()).toBe(testemail);
     })
 
     test ("get role using getRole()", () => {
