@@ -41,7 +41,7 @@ function init() {
         var html = generateHTML(responses);
         console.log(html)
 
-        writeToFile("index.html", html)
+        writeToFile("generatedhtml.html", html)
     })
 }
 
